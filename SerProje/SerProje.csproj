@@ -46,7 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\EgitimBilgisi.cs" />
     <Compile Include="Class\Enums.cs" />
+    <Compile Include="Class\KisiBilgisi.cs" />
     <Compile Include="FrmEgitimBilgisiEkle.cs">
       <SubType>Form</SubType>
     </Compile>
