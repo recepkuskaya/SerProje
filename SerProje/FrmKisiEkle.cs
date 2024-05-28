@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SerProje
 {
-    public partial class Form1 : Form
+    public partial class FrmKisiEkle : Form
     {
-        public Form1()
+        public FrmKisiEkle()
         {
             InitializeComponent();
         }
