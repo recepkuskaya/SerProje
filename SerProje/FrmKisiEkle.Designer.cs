@@ -216,7 +216,7 @@ namespace SerProje
             this.Controls.Add(this.panel2);
             this.Name = "FrmKisiEkle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Kişi Ekle";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
