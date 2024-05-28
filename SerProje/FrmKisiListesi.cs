@@ -16,5 +16,17 @@ namespace SerProje
         {
             InitializeComponent();
         }
+
+        private void yeniKişiEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmKisiEkle kisiEkle = new FrmKisiEkle();
+            kisiEkle.ShowDialog();
+        }
+
+        private void eğitimBilgisiEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmEgitimBilgisiEkle egitimBilgisiEkle = new FrmEgitimBilgisiEkle();
+            egitimBilgisiEkle.ShowDialog()
+        }
     }
 }

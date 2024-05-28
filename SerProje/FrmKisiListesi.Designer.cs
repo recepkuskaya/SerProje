@@ -79,12 +79,14 @@ namespace SerProje
             this.yeniKişiEkleToolStripMenuItem.Name = "yeniKişiEkleToolStripMenuItem";
             this.yeniKişiEkleToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
             this.yeniKişiEkleToolStripMenuItem.Text = "Yeni Kişi Ekle";
+            this.yeniKişiEkleToolStripMenuItem.Click += new System.EventHandler(this.yeniKişiEkleToolStripMenuItem_Click);
             // 
             // eğitimBilgisiEkleToolStripMenuItem
             // 
             this.eğitimBilgisiEkleToolStripMenuItem.Name = "eğitimBilgisiEkleToolStripMenuItem";
             this.eğitimBilgisiEkleToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
             this.eğitimBilgisiEkleToolStripMenuItem.Text = "Eğitim Bilgisi Ekle";
+            this.eğitimBilgisiEkleToolStripMenuItem.Click += new System.EventHandler(this.eğitimBilgisiEkleToolStripMenuItem_Click);
             // 
             // dataGridKisiListesi
             // 
