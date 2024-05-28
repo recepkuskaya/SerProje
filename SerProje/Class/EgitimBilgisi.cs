@@ -8,6 +8,7 @@ namespace SerProje.Class
 {
     public class EgitimBilgisi
     {
+        private int Id_;
         private int KisiId_;
         private string OkulTuru_;
         private string OkulAdi_;
@@ -15,6 +16,12 @@ namespace SerProje.Class
         private string OkulIlce_;
         private int KayitYil_;
         private int MezuniyetYil_;
+
+        public int Id
+        {
+            get { return Id_; }
+            set { Id_ = value; }
+        }
 
         public int Kisi_Id
         {
@@ -57,5 +64,9 @@ namespace SerProje.Class
             get { return MezuniyetYil_; }
             set { MezuniyetYil_ = value; }
         }
+
+
+        //İlişki için
+        public virtual KisiBilgisi KisiBilgisi { get; set; }
     }
 }

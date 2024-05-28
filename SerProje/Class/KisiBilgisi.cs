@@ -3,11 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SerProje.Model;
 
 namespace SerProje.Class
 {
-    public class KisiBilgisi
+    public class KisiBilgisi : ModelBase
     {
+        public void User()
+        {
+            this.EgitimBilgisis = new List<EgitimBilgisi>();
+        }
+
+
+        private int Id_;
         private string TcKimlikNo_;
         private string Adi_;
         private string Soyadi_;
@@ -15,6 +23,11 @@ namespace SerProje.Class
         private int BagliKisiNo_;
         private byte IsParent_;
 
+        public int Id
+        {
+            get { return Id_; }
+            set { Id_ = value; }
+        }
 
         public string TcKimlikNo
         {
@@ -51,6 +64,9 @@ namespace SerProje.Class
             get { return IsParent_; }
             set { IsParent_ = value; }
         }
+
+
+        public virtual ICollection<EgitimBilgisi> EgitimBilgisis { get; set; }
         
     }
 }
