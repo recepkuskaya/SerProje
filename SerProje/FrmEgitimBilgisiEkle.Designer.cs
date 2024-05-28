@@ -251,7 +251,8 @@ namespace SerProje
             this.Controls.Add(this.panel1);
             this.Name = "FrmEgitimBilgisiEkle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmEgitimBilgisiEkle";
+            this.Text = "Eğitim Bilgisi Ekle";
+            this.Load += new System.EventHandler(this.FrmEgitimBilgisiEkle_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
