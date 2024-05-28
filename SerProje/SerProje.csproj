@@ -46,16 +46,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmEgitimBilgisiEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEgitimBilgisiEkle.Designer.cs">
+      <DependentUpon>FrmEgitimBilgisiEkle.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmKisiEkle.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmKisiEkle.Designer.cs">
       <DependentUpon>FrmKisiEkle.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmKisiListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKisiListesi.Designer.cs">
+      <DependentUpon>FrmKisiListesi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmEgitimBilgisiEkle.resx">
+      <DependentUpon>FrmEgitimBilgisiEkle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmKisiEkle.resx">
       <DependentUpon>FrmKisiEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKisiListesi.resx">
+      <DependentUpon>FrmKisiListesi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

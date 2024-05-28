@@ -16,7 +16,7 @@ namespace SerProje
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmKisiEkle());
+            Application.Run(new FrmKisiListesi());
         }
     }
 }
