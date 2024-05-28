@@ -26,7 +26,7 @@ namespace SerProje
         private void eğitimBilgisiEkleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmEgitimBilgisiEkle egitimBilgisiEkle = new FrmEgitimBilgisiEkle();
-            egitimBilgisiEkle.ShowDialog()
+            egitimBilgisiEkle.ShowDialog();
         }
     }
 }

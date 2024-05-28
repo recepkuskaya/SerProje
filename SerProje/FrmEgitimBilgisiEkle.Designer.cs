@@ -31,20 +31,20 @@ namespace SerProje
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.mskTxt_Kayit_Yil = new System.Windows.Forms.MaskedTextBox();
             this.btn_Ekle = new System.Windows.Forms.Button();
             this.lblKisiNo = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_Okul_Adi = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.cmbOkulTuru = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cmb_Okul_Turu = new System.Windows.Forms.ComboBox();
+            this.txt_Okul_Il = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_Okul_Ilce = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.mskTxt_Mezuniyet_Yil = new System.Windows.Forms.MaskedTextBox();
             this.btn_Guncelle = new System.Windows.Forms.Button();
             this.btn_Sil = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -55,19 +55,19 @@ namespace SerProje
             this.panel1.Controls.Add(this.btn_Sil);
             this.panel1.Controls.Add(this.btn_Guncelle);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.maskedTextBox2);
+            this.panel1.Controls.Add(this.mskTxt_Mezuniyet_Yil);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.txt_Okul_Ilce);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txt_Okul_Il);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.cmbOkulTuru);
+            this.panel1.Controls.Add(this.cmb_Okul_Turu);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.txt_Okul_Adi);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.lblKisiNo);
             this.panel1.Controls.Add(this.btn_Ekle);
-            this.panel1.Controls.Add(this.maskedTextBox1);
+            this.panel1.Controls.Add(this.mskTxt_Kayit_Yil);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -85,14 +85,14 @@ namespace SerProje
             this.label1.TabIndex = 0;
             this.label1.Text = "Okul Türü :";
             // 
-            // maskedTextBox1
+            // mskTxt_Kayit_Yil
             // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(180, 158);
-            this.maskedTextBox1.Mask = "0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(251, 26);
-            this.maskedTextBox1.TabIndex = 2;
+            this.mskTxt_Kayit_Yil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mskTxt_Kayit_Yil.Location = new System.Drawing.Point(180, 158);
+            this.mskTxt_Kayit_Yil.Mask = "0000";
+            this.mskTxt_Kayit_Yil.Name = "mskTxt_Kayit_Yil";
+            this.mskTxt_Kayit_Yil.Size = new System.Drawing.Size(251, 26);
+            this.mskTxt_Kayit_Yil.TabIndex = 5;
             // 
             // btn_Ekle
             // 
@@ -101,7 +101,7 @@ namespace SerProje
             this.btn_Ekle.Location = new System.Drawing.Point(65, 242);
             this.btn_Ekle.Name = "btn_Ekle";
             this.btn_Ekle.Size = new System.Drawing.Size(118, 37);
-            this.btn_Ekle.TabIndex = 3;
+            this.btn_Ekle.TabIndex = 7;
             this.btn_Ekle.Text = "Ekle";
             this.btn_Ekle.UseVisualStyleBackColor = true;
             // 
@@ -118,13 +118,13 @@ namespace SerProje
             this.lblKisiNo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblKisiNo.Visible = false;
             // 
-            // textBox2
+            // txt_Okul_Adi
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(180, 62);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(251, 26);
-            this.textBox2.TabIndex = 6;
+            this.txt_Okul_Adi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Okul_Adi.Location = new System.Drawing.Point(180, 62);
+            this.txt_Okul_Adi.Name = "txt_Okul_Adi";
+            this.txt_Okul_Adi.Size = new System.Drawing.Size(251, 26);
+            this.txt_Okul_Adi.TabIndex = 2;
             // 
             // label2
             // 
@@ -146,22 +146,22 @@ namespace SerProje
             this.label3.TabIndex = 7;
             this.label3.Text = "Kişi No";
             // 
-            // cmbOkulTuru
+            // cmb_Okul_Turu
             // 
-            this.cmbOkulTuru.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbOkulTuru.FormattingEnabled = true;
-            this.cmbOkulTuru.Location = new System.Drawing.Point(180, 28);
-            this.cmbOkulTuru.Name = "cmbOkulTuru";
-            this.cmbOkulTuru.Size = new System.Drawing.Size(251, 28);
-            this.cmbOkulTuru.TabIndex = 8;
+            this.cmb_Okul_Turu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_Okul_Turu.FormattingEnabled = true;
+            this.cmb_Okul_Turu.Location = new System.Drawing.Point(180, 28);
+            this.cmb_Okul_Turu.Name = "cmb_Okul_Turu";
+            this.cmb_Okul_Turu.Size = new System.Drawing.Size(251, 28);
+            this.cmb_Okul_Turu.TabIndex = 1;
             // 
-            // textBox1
+            // txt_Okul_Il
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(180, 94);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(251, 26);
-            this.textBox1.TabIndex = 10;
+            this.txt_Okul_Il.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Okul_Il.Location = new System.Drawing.Point(180, 94);
+            this.txt_Okul_Il.Name = "txt_Okul_Il";
+            this.txt_Okul_Il.Size = new System.Drawing.Size(251, 26);
+            this.txt_Okul_Il.TabIndex = 3;
             // 
             // label4
             // 
@@ -173,13 +173,13 @@ namespace SerProje
             this.label4.TabIndex = 9;
             this.label4.Text = "İl :";
             // 
-            // textBox3
+            // txt_Okul_Ilce
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(180, 126);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(251, 26);
-            this.textBox3.TabIndex = 12;
+            this.txt_Okul_Ilce.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Okul_Ilce.Location = new System.Drawing.Point(180, 126);
+            this.txt_Okul_Ilce.Name = "txt_Okul_Ilce";
+            this.txt_Okul_Ilce.Size = new System.Drawing.Size(251, 26);
+            this.txt_Okul_Ilce.TabIndex = 4;
             // 
             // label5
             // 
@@ -211,15 +211,15 @@ namespace SerProje
             this.label7.TabIndex = 15;
             this.label7.Text = "Mezuniyet Tarihi (Yıl) :";
             // 
-            // maskedTextBox2
+            // mskTxt_Mezuniyet_Yil
             // 
-            this.maskedTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox2.Location = new System.Drawing.Point(180, 190);
-            this.maskedTextBox2.Mask = "00/00/0000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(251, 26);
-            this.maskedTextBox2.TabIndex = 14;
-            this.maskedTextBox2.ValidatingType = typeof(System.DateTime);
+            this.mskTxt_Mezuniyet_Yil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mskTxt_Mezuniyet_Yil.Location = new System.Drawing.Point(180, 190);
+            this.mskTxt_Mezuniyet_Yil.Mask = "0000";
+            this.mskTxt_Mezuniyet_Yil.Name = "mskTxt_Mezuniyet_Yil";
+            this.mskTxt_Mezuniyet_Yil.Size = new System.Drawing.Size(251, 26);
+            this.mskTxt_Mezuniyet_Yil.TabIndex = 6;
+            this.mskTxt_Mezuniyet_Yil.ValidatingType = typeof(System.DateTime);
             // 
             // btn_Guncelle
             // 
@@ -228,7 +228,7 @@ namespace SerProje
             this.btn_Guncelle.Location = new System.Drawing.Point(210, 242);
             this.btn_Guncelle.Name = "btn_Guncelle";
             this.btn_Guncelle.Size = new System.Drawing.Size(118, 37);
-            this.btn_Guncelle.TabIndex = 16;
+            this.btn_Guncelle.TabIndex = 8;
             this.btn_Guncelle.Text = "Güncelle";
             this.btn_Guncelle.UseVisualStyleBackColor = true;
             // 
@@ -239,7 +239,7 @@ namespace SerProje
             this.btn_Sil.Location = new System.Drawing.Point(356, 242);
             this.btn_Sil.Name = "btn_Sil";
             this.btn_Sil.Size = new System.Drawing.Size(118, 37);
-            this.btn_Sil.TabIndex = 17;
+            this.btn_Sil.TabIndex = 9;
             this.btn_Sil.Text = "Sil";
             this.btn_Sil.UseVisualStyleBackColor = true;
             // 
@@ -250,6 +250,7 @@ namespace SerProje
             this.ClientSize = new System.Drawing.Size(545, 345);
             this.Controls.Add(this.panel1);
             this.Name = "FrmEgitimBilgisiEkle";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmEgitimBilgisiEkle";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -261,19 +262,19 @@ namespace SerProje
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox mskTxt_Mezuniyet_Yil;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_Okul_Ilce;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_Okul_Il;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox cmbOkulTuru;
+        private System.Windows.Forms.ComboBox cmb_Okul_Turu;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_Okul_Adi;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblKisiNo;
         private System.Windows.Forms.Button btn_Ekle;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox mskTxt_Kayit_Yil;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_Sil;
         private System.Windows.Forms.Button btn_Guncelle;

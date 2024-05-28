@@ -125,6 +125,7 @@ namespace SerProje
             this.Controls.Add(this.panel1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmKisiListesi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmKisiListesi";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -86,7 +86,7 @@ namespace SerProje
             this.maskedTextBox1.Mask = "00000000000";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(245, 26);
-            this.maskedTextBox1.TabIndex = 16;
+            this.maskedTextBox1.TabIndex = 1;
             this.maskedTextBox1.ValidatingType = typeof(int);
             // 
             // mskTxtTelefonNo
@@ -96,7 +96,7 @@ namespace SerProje
             this.mskTxtTelefonNo.Mask = "(999) 000-0000";
             this.mskTxtTelefonNo.Name = "mskTxtTelefonNo";
             this.mskTxtTelefonNo.Size = new System.Drawing.Size(245, 26);
-            this.mskTxtTelefonNo.TabIndex = 15;
+            this.mskTxtTelefonNo.TabIndex = 4;
             // 
             // cmb_Parent
             // 
@@ -105,7 +105,7 @@ namespace SerProje
             this.cmb_Parent.Location = new System.Drawing.Point(195, 143);
             this.cmb_Parent.Name = "cmb_Parent";
             this.cmb_Parent.Size = new System.Drawing.Size(245, 28);
-            this.cmb_Parent.TabIndex = 14;
+            this.cmb_Parent.TabIndex = 5;
             // 
             // label5
             // 
@@ -124,7 +124,7 @@ namespace SerProje
             this.btn_Sil.Location = new System.Drawing.Point(348, 196);
             this.btn_Sil.Name = "btn_Sil";
             this.btn_Sil.Size = new System.Drawing.Size(92, 32);
-            this.btn_Sil.TabIndex = 12;
+            this.btn_Sil.TabIndex = 8;
             this.btn_Sil.Text = "Sil";
             this.btn_Sil.UseVisualStyleBackColor = true;
             // 
@@ -135,7 +135,7 @@ namespace SerProje
             this.btn_Guncelle.Location = new System.Drawing.Point(195, 196);
             this.btn_Guncelle.Name = "btn_Guncelle";
             this.btn_Guncelle.Size = new System.Drawing.Size(107, 32);
-            this.btn_Guncelle.TabIndex = 11;
+            this.btn_Guncelle.TabIndex = 7;
             this.btn_Guncelle.Text = "Güncelle";
             this.btn_Guncelle.UseVisualStyleBackColor = true;
             // 
@@ -146,7 +146,7 @@ namespace SerProje
             this.btn_Ekle.Location = new System.Drawing.Point(66, 196);
             this.btn_Ekle.Name = "btn_Ekle";
             this.btn_Ekle.Size = new System.Drawing.Size(92, 32);
-            this.btn_Ekle.TabIndex = 10;
+            this.btn_Ekle.TabIndex = 6;
             this.btn_Ekle.Text = "Ekle";
             this.btn_Ekle.UseVisualStyleBackColor = true;
             // 
@@ -188,7 +188,7 @@ namespace SerProje
             this.txtSoyadi.Location = new System.Drawing.Point(195, 79);
             this.txtSoyadi.Name = "txtSoyadi";
             this.txtSoyadi.Size = new System.Drawing.Size(245, 26);
-            this.txtSoyadi.TabIndex = 6;
+            this.txtSoyadi.TabIndex = 3;
             // 
             // label2
             // 
@@ -206,7 +206,7 @@ namespace SerProje
             this.txtAdi.Location = new System.Drawing.Point(195, 47);
             this.txtAdi.Name = "txtAdi";
             this.txtAdi.Size = new System.Drawing.Size(245, 26);
-            this.txtAdi.TabIndex = 4;
+            this.txtAdi.TabIndex = 2;
             // 
             // FrmKisiEkle
             // 
@@ -215,6 +215,7 @@ namespace SerProje
             this.ClientSize = new System.Drawing.Size(575, 350);
             this.Controls.Add(this.panel2);
             this.Name = "FrmKisiEkle";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
