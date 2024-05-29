@@ -30,16 +30,16 @@ namespace SerProje
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.yeniKişiEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eğitimBilgisiEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridKisiListesi = new System.Windows.Forms.DataGridView();
             this.dataGridEgitimBilgileri = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridKisiListesi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridEgitimBilgileri)).BeginInit();
             this.panel3.SuspendLayout();
@@ -53,15 +53,6 @@ namespace SerProje
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 28);
             this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.dataGridKisiListesi);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 28);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 247);
-            this.panel2.TabIndex = 1;
             // 
             // menuStrip1
             // 
@@ -87,6 +78,15 @@ namespace SerProje
             this.eğitimBilgisiEkleToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
             this.eğitimBilgisiEkleToolStripMenuItem.Text = "Eğitim Bilgisi Ekle";
             this.eğitimBilgisiEkleToolStripMenuItem.Click += new System.EventHandler(this.eğitimBilgisiEkleToolStripMenuItem_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.dataGridKisiListesi);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 28);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(800, 247);
+            this.panel2.TabIndex = 1;
             // 
             // dataGridKisiListesi
             // 
@@ -127,11 +127,12 @@ namespace SerProje
             this.Name = "FrmKisiListesi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kişi Listesi";
+            this.Load += new System.EventHandler(this.FrmKisiListesi_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridKisiListesi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridEgitimBilgileri)).EndInit();
             this.panel3.ResumeLayout(false);

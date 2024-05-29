@@ -25,10 +25,10 @@ namespace SerProje.Repository
             return dbSet_.Find(id);
         }
 
-        /*public IEnumerable<T> GetAll()
+        public IEnumerable<T> GetAll()
         {
             return dbSet_.ToList();
-        }*/
+        }
 
         public virtual IEnumerable<T> Select(Expression<Func<T, bool>> Filter = null)
         {

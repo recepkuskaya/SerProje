@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SerProje.UnitOfWork;
 
 namespace SerProje
 {
@@ -27,6 +28,22 @@ namespace SerProje
         {
             FrmEgitimBilgisiEkle egitimBilgisiEkle = new FrmEgitimBilgisiEkle();
             egitimBilgisiEkle.ShowDialog();
+        }
+
+        private void FrmKisiListesi_Load(object sender, EventArgs e)
+        {
+            //KisiBilgileriDoldur();
+        }
+
+        private void KisiBilgileriDoldur()
+        {
+            using(SerProjeDB context = new SerProjeDB())
+            {
+                using(SerUnitOfWork uof = new SerUnitOfWork())
+                {
+                    dataGridKisiListesi.DataSource = uof.KisiBilgisiRepository.GetAll();
+                }
+            }
         }
     }
 }
