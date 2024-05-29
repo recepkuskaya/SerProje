@@ -149,6 +149,7 @@ namespace SerProje
             this.btn_Ekle.TabIndex = 6;
             this.btn_Ekle.Text = "Ekle";
             this.btn_Ekle.UseVisualStyleBackColor = true;
+            this.btn_Ekle.Click += new System.EventHandler(this.btn_Ekle_Click);
             // 
             // lbl_KayitNo
             // 

@@ -45,6 +45,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -56,12 +58,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NewClasses\BagliKisiler.cs" />
     <Compile Include="Class\EgitimBilgisi.cs" />
     <Compile Include="Class\Enums.cs" />
     <Compile Include="Class\KisiBilgisi.cs" />
     <Compile Include="Class\ParentKisi.cs" />
     <Compile Include="Class\SonOkul.cs" />
-    <Compile Include="Data\Context\EFSerProjeContext.cs" />
+    <Compile Include="ContextSer\SerDbContext.cs" />
+    <Compile Include="NewClasses\EgitimBilgileri.cs" />
     <Compile Include="FrmEgitimBilgisiEkle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,10 +84,21 @@
     <Compile Include="FrmKisiListesi.Designer.cs">
       <DependentUpon>FrmKisiListesi.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewClasses\Enums.cs" />
+    <Compile Include="NewClasses\KisiBilgileri.cs" />
+    <Compile Include="Migrations\202405291857520_InitialCreate.cs" />
+    <Compile Include="Migrations\202405291857520_InitialCreate.designer.cs">
+      <DependentUpon>202405291857520_InitialCreate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Model\ModelBase.cs" />
+    <Compile Include="Repository\IGenericRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\SerProjectRepository.cs" />
+    <Compile Include="ContextSer\SerProjeDB.cs" />
+    <Compile Include="NewClasses\SonEgitimBilgisi.cs" />
+    <Compile Include="UnitOfWork\IUnitOfWork.cs" />
+    <Compile Include="UnitOfWork\SerUnitOfWork.cs" />
     <EmbeddedResource Include="FrmEgitimBilgisiEkle.resx">
       <DependentUpon>FrmEgitimBilgisiEkle.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmKisiListesi.resx">
       <DependentUpon>FrmKisiListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405291857520_InitialCreate.resx">
+      <DependentUpon>202405291857520_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

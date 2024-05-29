@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SerProje.Model
+namespace SerProje.UnitOfWork
 {
-    public abstract class ModelBase
+    public interface IUnitOfWork : IDisposable
     {
-        public DateTime CreatedDate { get; set; }
+        void Save();
     }
 }

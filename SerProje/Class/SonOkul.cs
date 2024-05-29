@@ -10,5 +10,9 @@ namespace SerProje.Class
     {
         public int Kisi_Id { get; set; }
         public int Okul_Id { get; set; }
+
+
+        public virtual KisiBilgisi KisiBilgisi { get; set; }
+        public virtual EgitimBilgisi EgitimBilgisi { get; set; }
     }
 }
