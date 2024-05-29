@@ -1,20 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SerProje.Model;
 
 namespace SerProje.Class
 {
-    public class KisiBilgisi : ModelBase
+    public class KisiBilgisi
     {
-        public void User()
-        {
-            this.EgitimBilgisis = new List<EgitimBilgisi>();
-        }
-
-
         private int Id_;
         private string TcKimlikNo_;
         private string Adi_;
@@ -23,6 +17,7 @@ namespace SerProje.Class
         private int BagliKisiNo_;
         private byte IsParent_;
 
+        [Key]
         public int Id
         {
             get { return Id_; }
