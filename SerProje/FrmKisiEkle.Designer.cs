@@ -31,7 +31,7 @@ namespace SerProje
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.mskTxtTcKimlikNo = new System.Windows.Forms.MaskedTextBox();
             this.mskTxtTelefonNo = new System.Windows.Forms.MaskedTextBox();
             this.cmb_Parent = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -59,7 +59,7 @@ namespace SerProje
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.maskedTextBox1);
+            this.panel2.Controls.Add(this.mskTxtTcKimlikNo);
             this.panel2.Controls.Add(this.mskTxtTelefonNo);
             this.panel2.Controls.Add(this.cmb_Parent);
             this.panel2.Controls.Add(this.label5);
@@ -79,15 +79,15 @@ namespace SerProje
             this.panel2.Size = new System.Drawing.Size(575, 258);
             this.panel2.TabIndex = 3;
             // 
-            // maskedTextBox1
+            // mskTxtTcKimlikNo
             // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(195, 18);
-            this.maskedTextBox1.Mask = "00000000000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(245, 26);
-            this.maskedTextBox1.TabIndex = 1;
-            this.maskedTextBox1.ValidatingType = typeof(int);
+            this.mskTxtTcKimlikNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mskTxtTcKimlikNo.Location = new System.Drawing.Point(195, 18);
+            this.mskTxtTcKimlikNo.Mask = "00000000000";
+            this.mskTxtTcKimlikNo.Name = "mskTxtTcKimlikNo";
+            this.mskTxtTcKimlikNo.Size = new System.Drawing.Size(245, 26);
+            this.mskTxtTcKimlikNo.TabIndex = 1;
+            this.mskTxtTcKimlikNo.ValidatingType = typeof(int);
             // 
             // mskTxtTelefonNo
             // 
@@ -218,6 +218,7 @@ namespace SerProje
             this.Name = "FrmKisiEkle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kişi Ekle";
+            this.Load += new System.EventHandler(this.FrmKisiEkle_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -228,7 +229,7 @@ namespace SerProje
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox mskTxtTcKimlikNo;
         private System.Windows.Forms.MaskedTextBox mskTxtTelefonNo;
         private System.Windows.Forms.ComboBox cmb_Parent;
         private System.Windows.Forms.Label label5;
