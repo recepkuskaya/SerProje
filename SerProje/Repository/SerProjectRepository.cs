@@ -25,6 +25,16 @@ namespace SerProje.Repository
             return dbSet_.Find(id);
         }
 
+        /*public IEnumerable<T> GetAll()
+        {
+            return dbSet_.ToList();
+        }*/
+
+        public List<T> GetAllList()
+        {
+            return dbSet_.ToList();
+        }
+
         public IEnumerable<T> GetAll()
         {
             return dbSet_.ToList();
@@ -51,7 +61,10 @@ namespace SerProje.Repository
 
         public void Delete(T entity)
         {
+            
             dbSet_.Remove(entity);
         }
+
+
     }
 }

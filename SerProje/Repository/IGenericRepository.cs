@@ -16,5 +16,10 @@ namespace SerProje.Repository
         void Update(T Entity);
         //void Delete(object EntityId);
         void Delete(T Entity);
+
+        //void GetAll(T Entity);
+        IEnumerable<T> GetAll();
+        List<T> GetAllList();
+
     }
 }

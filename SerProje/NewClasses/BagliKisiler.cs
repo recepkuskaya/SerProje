@@ -18,5 +18,6 @@ namespace SerProje.NewClasses
         public virtual KisiBilgileri KisiBilgileri { get; set; }
 
         public virtual KisiBilgileri KisiBilgileri1 { get; set; }
+
     }
 }

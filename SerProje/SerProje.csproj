@@ -65,6 +65,7 @@
     <Compile Include="Class\ParentKisi.cs" />
     <Compile Include="Class\SonOkul.cs" />
     <Compile Include="ContextSer\SerDbContext.cs" />
+    <Compile Include="NewClasses\Class1.cs" />
     <Compile Include="NewClasses\EgitimBilgileri.cs" />
     <Compile Include="FrmEgitimBilgisiEkle.cs">
       <SubType>Form</SubType>

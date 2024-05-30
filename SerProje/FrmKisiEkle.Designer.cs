@@ -127,6 +127,7 @@ namespace SerProje
             this.btn_Sil.TabIndex = 8;
             this.btn_Sil.Text = "Sil";
             this.btn_Sil.UseVisualStyleBackColor = true;
+            this.btn_Sil.Click += new System.EventHandler(this.btn_Sil_Click);
             // 
             // btn_Guncelle
             // 
@@ -138,6 +139,7 @@ namespace SerProje
             this.btn_Guncelle.TabIndex = 7;
             this.btn_Guncelle.Text = "Güncelle";
             this.btn_Guncelle.UseVisualStyleBackColor = true;
+            this.btn_Guncelle.Click += new System.EventHandler(this.btn_Guncelle_Click);
             // 
             // btn_Ekle
             // 

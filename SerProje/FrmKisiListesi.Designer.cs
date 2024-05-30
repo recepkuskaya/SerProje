@@ -51,7 +51,7 @@ namespace SerProje
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 28);
+            this.panel1.Size = new System.Drawing.Size(1130, 28);
             this.panel1.TabIndex = 0;
             // 
             // menuStrip1
@@ -61,7 +61,7 @@ namespace SerProje
             this.eğitimBilgisiEkleToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1130, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -85,7 +85,7 @@ namespace SerProje
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 28);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 247);
+            this.panel2.Size = new System.Drawing.Size(1130, 247);
             this.panel2.TabIndex = 1;
             // 
             // dataGridKisiListesi
@@ -94,8 +94,11 @@ namespace SerProje
             this.dataGridKisiListesi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridKisiListesi.Location = new System.Drawing.Point(0, 0);
             this.dataGridKisiListesi.Name = "dataGridKisiListesi";
-            this.dataGridKisiListesi.Size = new System.Drawing.Size(800, 247);
+            this.dataGridKisiListesi.ReadOnly = true;
+            this.dataGridKisiListesi.Size = new System.Drawing.Size(1130, 247);
             this.dataGridKisiListesi.TabIndex = 0;
+            this.dataGridKisiListesi.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridKisiListesi_CellClick);
+            this.dataGridKisiListesi.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridKisiListesi_CellDoubleClick);
             // 
             // dataGridEgitimBilgileri
             // 
@@ -103,8 +106,10 @@ namespace SerProje
             this.dataGridEgitimBilgileri.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridEgitimBilgileri.Location = new System.Drawing.Point(0, 0);
             this.dataGridEgitimBilgileri.Name = "dataGridEgitimBilgileri";
-            this.dataGridEgitimBilgileri.Size = new System.Drawing.Size(800, 175);
+            this.dataGridEgitimBilgileri.ReadOnly = true;
+            this.dataGridEgitimBilgileri.Size = new System.Drawing.Size(1130, 237);
             this.dataGridEgitimBilgileri.TabIndex = 2;
+            this.dataGridEgitimBilgileri.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridEgitimBilgileri_CellDoubleClick);
             // 
             // panel3
             // 
@@ -112,14 +117,14 @@ namespace SerProje
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 275);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(800, 175);
+            this.panel3.Size = new System.Drawing.Size(1130, 237);
             this.panel3.TabIndex = 3;
             // 
             // FrmKisiListesi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1130, 512);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

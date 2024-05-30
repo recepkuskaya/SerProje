@@ -25,7 +25,7 @@ namespace SerProje
                 .WithOptional(e => e.EgitimBilgileri)
                 .HasForeignKey(e => e.Okul_id);
 
-            modelBuilder.Entity<KisiBilgileri>()
+            /*modelBuilder.Entity<KisiBilgileri>()
                 .HasMany(e => e.BagliKisiler)
                 .WithOptional(e => e.KisiBilgileri)
                 .HasForeignKey(e => e.Ast_kisi_id);
@@ -33,7 +33,7 @@ namespace SerProje
             modelBuilder.Entity<KisiBilgileri>()
                 .HasMany(e => e.BagliKisiler1)
                 .WithOptional(e => e.KisiBilgileri1)
-                .HasForeignKey(e => e.Ust_kisi_id);
+                .HasForeignKey(e => e.Ust_kisi_id);*/
 
             modelBuilder.Entity<KisiBilgileri>()
                 .HasMany(e => e.EgitimBilgileri)

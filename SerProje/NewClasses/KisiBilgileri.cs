@@ -12,8 +12,8 @@ namespace SerProje.NewClasses
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public KisiBilgileri()
         {
-            BagliKisiler = new HashSet<BagliKisiler>();
-            BagliKisiler1 = new HashSet<BagliKisiler>();
+            //BagliKisiler = new HashSet<BagliKisiler>();
+            //BagliKisiler1 = new HashSet<BagliKisiler>();
             EgitimBilgileri = new HashSet<EgitimBilgileri>();
             SonEgitimBilgisi = new HashSet<SonEgitimBilgisi>();
         }
@@ -36,16 +36,16 @@ namespace SerProje.NewClasses
 
         public bool? IsParent { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        /*[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<BagliKisiler> BagliKisiler { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BagliKisiler> BagliKisiler1 { get; set; }
+        public virtual ICollection<BagliKisiler> BagliKisiler1 { get; set; }*/
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<EgitimBilgileri> EgitimBilgileri { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<SonEgitimBilgisi> SonEgitimBilgisi { get; set; }
     }
 }
