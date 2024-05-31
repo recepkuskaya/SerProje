@@ -165,14 +165,18 @@ namespace SerProje
                     unitOfWork.SonOkulRepository.Insert(sonEgitim);
 
 
-                    //Son eğitim tablosundan eski olan mezuniyet silinecek.
-                    int son_egitim_bilgisi = Convert.ToInt32(unitOfWork.SonOkulRepository.Select(a => a.Kisi_id == Kisi_id_).Max(p => p.id));
-
-                    var entityToDelete = unitOfWork.SonOkulRepository.GetById(son_egitim_bilgisi); // Silinecek kayıt
-                    if (entityToDelete != null)
+                    if(_mezuniyet_yil > 0)
                     {
-                        unitOfWork.SonOkulRepository.Delete(entityToDelete);
+                        //Son eğitim tablosundan eski olan mezuniyet silinecek.
+                        int son_egitim_bilgisi = Convert.ToInt32(unitOfWork.SonOkulRepository.Select(a => a.Kisi_id == Kisi_id_).Max(p => p.id));
+
+                        var entityToDelete = unitOfWork.SonOkulRepository.GetById(son_egitim_bilgisi); // Silinecek kayıt
+                        if (entityToDelete != null)
+                        {
+                            unitOfWork.SonOkulRepository.Delete(entityToDelete);
+                        }
                     }
+                    
 
                 }
 
